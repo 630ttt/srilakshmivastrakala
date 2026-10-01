@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f4ef">
-  <meta name="description" content="Discover considered Indian occasionwear at Sri Laxmi Vastrakala. Sarees, lehengas and heirlooms for the moments that matter.">
-  <title>Sri Laxmi Vastrakala | Woven for the moments that matter</title>
+  <meta name="description" content="Discover considered Indian occasionwear at Sri Lakshmi Vastrakala. Sarees, lehengas and heirlooms for the moments that matter.">
+  <title>Sri Lakshmi Vastrakala | Woven for the moments that matter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
@@ -299,44 +299,210 @@
       .quick-edits { display: none; }
       .hero-content { bottom: 118px; }
     }
+    main > .collection-page { display: none; }
+    .site-header { position: sticky; top: 0; color: var(--ink); background: rgba(255, 254, 250, .98); box-shadow: 0 1px 0 rgba(71, 60, 43, .1); }
+    .site-header.scrolled { position: sticky; top: 0; }
+    .header-inner { min-height: 72px; }
+    .desktop-nav { gap: clamp(12px, 1.55vw, 24px); }
+    .desktop-nav a { font-size: 9px; }
+    .collection-page { max-width: 1760px; min-height: 75vh; margin: 0 auto; padding: 45px var(--page-pad) 100px; }
+    .collection-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .collection-heading h1 { margin: 8px 0 0; font-family: var(--serif); font-size: clamp(36px, 4.2vw, 54px); font-weight: 400; line-height: 1.08; }
+    .collection-heading p { max-width: 400px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+    .collection-toolbar { display: flex; min-height: 65px; align-items: center; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--line); }
+    .collection-count { color: var(--muted); font-size: 10px; }
+    .collection-controls { display: flex; gap: 10px; }
+    .collection-controls label { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 9px; }
+    .collection-controls select { min-height: 34px; padding: 0 27px 0 9px; border: 1px solid var(--line); border-radius: 0; background: var(--white); color: var(--ink); font-size: 10px; }
+    .collection-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px 16px; padding-top: 22px; }
+    .collection-grid .product-image { aspect-ratio: .76; }
+    .collection-grid .product-info h2 { margin: 0; font-family: var(--serif); font-size: 16px; font-weight: 400; }
+    .collection-grid .product-info p { font-size: 8px; }
+    .collection-grid .price { font-size: 9px; }
+    .collection-grid .product[hidden] { display: none; }
+    .empty-collection { display: none; padding: 60px 0; color: var(--muted); font-family: var(--serif); font-size: 22px; text-align: center; }
+    .empty-collection.visible { display: block; }
+    @media (max-width: 1150px) {
+      .site-header { position: sticky; }
+      .header-inner { min-height: 68px; }
+      .collection-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 720px) {
+      .collection-page { padding: 33px var(--page-pad) 75px; }
+      .collection-heading { align-items: flex-start; flex-direction: column; gap: 12px; padding-bottom: 21px; }
+      .collection-heading h1 { font-size: 42px; }
+      .collection-heading p { max-width: 330px; font-size: 10px; }
+      .collection-toolbar { align-items: flex-start; flex-direction: column; gap: 12px; padding: 15px 0; }
+      .collection-controls { width: 100%; gap: 8px; }
+      .collection-controls label { flex: 1; min-width: 0; flex-direction: column; align-items: stretch; gap: 5px; }
+      .collection-controls select { width: 100%; }
+      .collection-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px 11px; padding-top: 16px; }
+      .collection-grid .product-info h2 { font-size: 14px; }
+      .collection-grid .product-info { padding-top: 9px; }
+      .collection-grid .product-info .price { display: block; padding-top: 6px; }
+    }
+    .announcement { background: #e91581; color: white; font-size: 10px; letter-spacing: .04em; }
+    .site-header, .site-header.scrolled { position: sticky; top: 0; color: var(--ink); background: #fff; box-shadow: 0 1px 0 rgba(55, 48, 42, .13); backdrop-filter: none; }
+    .header-inner { grid-template-columns: 1fr auto 1fr; grid-template-rows: 83px 43px; padding: 0 var(--page-pad); }
+    .brand { grid-column: 2; grid-row: 1; justify-self: center; gap: 0; }
+    .brand-mark { display: grid; width: 38px; height: 38px; flex: 0 0 38px; place-items: center; border: 0; border-radius: 0; color: #a47c18; font-size: 0; }
+    .brand-mark svg { display: block; width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 4.2; stroke-linecap: round; stroke-linejoin: round; }
+    .brand-name { color: #e91581; font-family: var(--serif); font-size: 27px; letter-spacing: .035em; text-align: center; }
+    .brand-name small { margin-top: 2px; font-size: 7px; letter-spacing: .3em; }
+    .desktop-nav { grid-column: 1 / -1; grid-row: 2; justify-content: center; gap: clamp(12px, 1.55vw, 24px); border-top: 1px solid #efedef; }
+    .desktop-nav a { font-size: 9px; letter-spacing: .035em; }
+    .header-actions { grid-column: 3; grid-row: 1; align-items: center; }
+    .header-actions .search-action { position: absolute; top: 22px; left: var(--page-pad); }
+    .hero { min-height: 0; height: min(590px, 44vw); margin-top: 28px; background: #fff8fa; color: #482735; }
+    .hero-slide { background: linear-gradient(90deg, #fff 0%, #fff 39%, #f8e3eb 58%, #f8e3eb 100%); }
+    .hero-slide img { right: auto; width: 55%; object-fit: contain; object-position: left center; }
+    .hero-slide::after { background: linear-gradient(90deg, transparent 0%, transparent 39%, rgba(248, 227, 235, .35) 49%, rgba(248, 227, 235, .94) 61%, #f8e3eb 100%); }
+    .hero-content { top: 50%; right: max(var(--page-pad), calc((100vw - 1240px) / 2)); left: auto; width: min(500px, 43vw); transform: translateY(-50%); text-align: center; }
+    .hero-title { font-family: var(--sans); font-size: clamp(58px, 8vw, 112px); font-weight: 600; line-height: .92; text-transform: uppercase; }
+    .hero-content .eyebrow { color: #9b6537; }
+    .hero-title { color: #54243a; }
+    .hero-copy { margin: 18px auto 0; color: #654c58; }
+    .hero-cta { border-color: #bd6f8e; color: #76264b; }
+    .hero-arrow { border-color: rgba(84, 36, 58, .45); color: #54243a; }
+    .hero-arrow:hover { background: #54243a; color: white; }
+    .hero-dot { background: rgba(84, 36, 58, .28); }
+    .hero-dot.active { background: #a53b68; }
+    .hero-index { color: #654c58; }
+    .hero-index span { color: #a53b68; }
+    .quick-edits { display: none; }
+    .category-tile img, .signature-image img, .lookbook-image img, .product-image img, .occasion > img, .story-image img, .campaign img { filter: brightness(1.08); }
+    @media (max-width: 1150px) {
+      .header-inner { grid-template-columns: 1fr auto; grid-template-rows: 70px; }
+      .brand { grid-column: 1; grid-row: 1; justify-self: start; }
+      .brand-name { font-size: 20px; text-align: left; }
+      .desktop-nav { display: none; }
+      .header-actions { grid-column: 2; grid-row: 1; }
+      .header-actions .search-action { position: static; }
+      .hero { height: 540px; margin-top: 0; }
+    }
+    @media (max-width: 720px) {
+      .announcement { min-height: 29px; font-size: 8px; }
+      .header-inner { min-height: 66px; }
+      .brand-name { font-size: 17px; }
+      .brand-name small { font-size: 6px; }
+      .header-actions .account-action, .header-actions .wishlist-action { display: none; }
+      .hero { min-height: 680px; height: calc(100svh - 95px); max-height: 790px; }
+      .hero-slide img { object-position: 58% 12%; }
+      .hero-slide::after { background: linear-gradient(0deg, rgba(15, 34, 17, .82), rgba(15, 34, 17, .2) 62%, rgba(15, 34, 17, .04)); }
+      .hero-content { top: auto; right: 24px; bottom: 155px; left: 24px; width: auto; transform: none; text-align: left; }
+      .hero-title { max-width: 400px; font-size: clamp(58px, 14vw, 88px); }
+      .hero-copy { margin: 12px 0 0; }
+    }
+    .mobile-search { display: none; }
+    @media (max-width: 720px) {
+      .header-inner { grid-template-columns: 1fr auto 1fr; grid-template-rows: 66px; padding: 0 20px; }
+      .brand { grid-column: 2; grid-row: 1; justify-self: center; }
+      .brand-name { font-size: 17px; text-align: center; white-space: nowrap; }
+      .header-actions { grid-column: 3; grid-row: 1; justify-self: end; }
+      .header-actions .search-action { display: none; }
+      .header-actions .menu-toggle { position: absolute; left: 12px; display: inline-grid; }
+      .mobile-search { display: flex; height: 54px; align-items: center; margin: 0 12px 12px; border: 1px solid #e5e2df; background: white; }
+      .mobile-search input { width: 100%; min-width: 0; height: 100%; padding: 0 14px; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 15px; }
+      .mobile-search button { display: grid; width: 52px; height: 100%; flex: 0 0 auto; place-items: center; border: 0; background: transparent; cursor: pointer; }
+      main { display: flex; flex-direction: column; }
+      main > .hero { order: 0; }
+      main > .collection-page { display: block; order: 1; max-width: none; min-height: 0; padding: 0 0 30px; }
+      main > .service-strip, main > section:not(.hero):not(.collection-page) { order: 2; }
+      .hero { aspect-ratio: 1.68; min-height: 0; height: auto; max-height: none; }
+      .hero-slide img { width: 55%; object-fit: contain; object-position: left center; }
+      .hero-slide::after { background: linear-gradient(90deg, transparent 0%, transparent 39%, rgba(248, 227, 235, .35) 49%, rgba(248, 227, 235, .94) 61%, #f8e3eb 100%); }
+      .hero-content { top: 50%; right: 8px; bottom: auto; left: 49%; width: auto; transform: translateY(-50%); text-align: center; }
+      .hero-title { margin: 8px 0; font-size: clamp(28px, 8vw, 48px); line-height: .98; }
+      .hero-content .eyebrow { font-size: 7px; letter-spacing: .11em; }
+      .hero-copy { display: none; }
+      .hero-cta { gap: 7px; margin-top: 9px; padding-bottom: 5px; font-size: 7px; letter-spacing: .08em; }
+      .hero-controls { right: 10px; bottom: 8px; gap: 5px; }
+      .hero-arrow { width: 25px; height: 25px; }
+      .hero-arrow .icon { width: 15px; height: 15px; }
+      .hero-dots { gap: 4px; }
+      .hero-dot { width: 13px; }
+      .hero-dot.active { width: 22px; }
+      .hero-index { display: none; }
+      .collection-heading, .collection-count { display: none; }
+      .collection-toolbar { min-height: 0; padding: 12px 0; border: 0; }
+      .collection-controls { gap: 12px; }
+      .collection-controls label { position: relative; display: flex; min-height: 68px; flex: 1; align-items: stretch; justify-content: center; }
+      .collection-controls select { width: 100%; height: 68px; min-height: 68px; padding: 0 34px 0 17px; border: 1px solid #e5e2df; background: white; font-size: 15px; }
+      .filter-control select { padding-left: 48px; }
+      .filter-control .icon { position: absolute; z-index: 1; top: 24px; left: 17px; width: 22px; height: 22px; pointer-events: none; }
+      .collection-grid { padding: 12px 0 0; }
+    }
   </style>
 </head>
 <body>
   <div class="announcement">Complimentary shipping on orders over ₹10,000</div>
   <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a class="brand" href="#home" aria-label="Sri Laxmi Vastrakala home">
-        <span class="brand-mark" aria-hidden="true">S</span>
-        <span class="brand-name">Sri Laxmi Vastrakala<small>Crafted for celebration</small></span>
+      <a class="brand" href="#home" aria-label="Sri Lakshmi Vastrakala home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><path d="M50 76C43 69 34 66 26 67 16 68 10 61 11 52c1-8 6-12 14-10 9 2 17 10 22 21-3-12-1-28 3-37 4 9 6 25 3 37 5-11 13-19 22-21 8-2 13 2 14 10 1 9-5 16-15 15-8-1-17 2-24 9Z"/><path d="M50 26c-9 6-13 15-11 25 1 8 6 15 11 19 5-4 10-11 11-19 2-10-2-19-11-25Z"/><path d="M39 63c-10-8-19-10-27-8 2 11 11 19 22 21 7 1 13-1 16-4M61 63c10-8 19-10 27-8-2 11-11 19-22 21-7 1-13-1-16-4M50 70v21"/></svg></span>
+        <span class="brand-name">Sri Lakshmi Vastrakala<small>Crafted for celebration</small></span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#new-arrivals">New Arrivals</a><a href="#sarees">Sarees</a><a href="#lehengas">Lehengas</a><a href="#salwar-suits">Salwar Suits</a><a href="#dresses">Dresses</a><a href="#collections">Collections</a><a href="#the-film">The Film</a><a href="#story">About</a>
+        <a href="#new-arrivals">New Season</a><a href="#wardrobe-edit">Linen</a><a href="#featured">Best Sellers</a><a href="#salwar-suits">Suits</a><a href="#sarees">Sarees</a><a href="#lehengas">Kurtas</a><a href="#bridal">Lehenga Set</a><a href="#collections">Festive Collection</a><a href="#dresses">Kids</a><a href="#occasion">Sale</a>
       </nav>
       <div class="header-actions">
         <button class="icon-button search-action" type="button" aria-label="Search this page" title="Search"><svg class="icon" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button>
         <a class="icon-button wishlist-action" href="#featured" aria-label="View featured favourites" title="Favourites"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></a>
-        <a class="icon-button account-action" href="#story" aria-label="About Sri Laxmi Vastrakala" title="Our story"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.6 3.2-5.7 7-5.7s6.5 2.1 7 5.7"/></svg></a>
+        <a class="icon-button account-action" href="#story" aria-label="About Sri Lakshmi Vastrakala" title="Our story"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.6 3.2-5.7 7-5.7s6.5 2.1 7 5.7"/></svg></a>
         <a class="icon-button" href="#featured" aria-label="Shop featured designs" title="Shop"><svg class="icon" viewBox="0 0 24 24"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="bag-count" aria-hidden="true">0</span></a>
         <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg class="icon" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
       </div>
     </div>
+    <form class="mobile-search" id="mobile-search-form">
+      <label class="sr-only" for="mobile-search-input">Search this collection</label>
+      <input id="mobile-search-input" type="search" placeholder="Search">
+      <button type="submit" aria-label="Search"><svg class="icon" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button>
+    </form>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-    <span class="eyebrow">Sri Laxmi Vastrakala</span>
-    <a href="#new-arrivals">New Arrivals</a><a href="#sarees">Sarees</a><a href="#lehengas">Lehengas</a><a href="#salwar-suits">Salwar Suits</a><a href="#dresses">Dresses</a><a href="#collections">Collections</a><a href="#the-film">The Film</a><a href="#story">Our Story</a>
+    <span class="eyebrow">Sri Lakshmi Vastrakala</span>
+    <a href="#new-arrivals">New Season</a><a href="#wardrobe-edit">Linen</a><a href="#featured">Best Sellers</a><a href="#salwar-suits">Suits</a><a href="#sarees">Sarees</a><a href="#lehengas">Kurtas</a><a href="#bridal">Lehenga Set</a><a href="#collections">Festive Collection</a><a href="#dresses">Kids</a><a href="#occasion">Sale</a>
   </nav>
   <main id="home">
+    <section class="collection-page" id="best-sellers" aria-labelledby="collection-title">
+      <header class="collection-heading">
+        <div><span class="eyebrow">Sri Lakshmi Vastrakala · The collection</span><h1 id="collection-title">Best Sellers</h1></div>
+        <p>Discover occasionwear chosen for its craft, color and the moments worth dressing for.</p>
+      </header>
+      <div class="collection-toolbar">
+        <span class="collection-count" id="collection-count" aria-live="polite">12 pieces</span>
+        <div class="collection-controls">
+          <label class="filter-control"><span class="sr-only">Filter by category</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="8" cy="7" r="1.5"/><circle cx="15" cy="12" r="1.5"/></svg><select id="category-filter" aria-label="Filter by category"><option value="all">Filter</option><option value="sarees">Sarees</option><option value="lehengas">Lehengas</option><option value="suits">Suits</option><option value="kurtas">Kurtas</option></select></label>
+          <label class="sort-control"><span class="sr-only">Sort products</span><select id="collection-sort" aria-label="Sort products"><option value="featured">Featured</option><option value="name-asc">Name, A to Z</option><option value="name-desc">Name, Z to A</option></select></label>
+        </div>
+      </div>
+      <div class="product-grid collection-grid" id="collection-grid">
+        <article class="product" data-category="sarees" data-name="Blue Hour"><div class="product-image"><img src="https://images.pexels.com/photos/7176430/pexels-photo-7176430.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A woman in a vibrant blue saree" fetchpriority="high"><span class="product-tag">Bestseller</span><button class="wishlist-button" type="button" aria-label="Add Blue Hour to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Blue Hour</h2><p>Traditional saree</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="lehengas" data-name="Gulabi"><div class="product-image"><img src="https://images.pexels.com/photos/37628608/pexels-photo-37628608/free-photo-of-elegant-woman-in-pink-embroidered-lehenga-by-poolside.jpeg?auto=compress&amp;w=850" alt="A pink embroidered lehenga by a poolside" loading="lazy"><span class="product-tag">Occasion edit</span><button class="wishlist-button" type="button" aria-label="Add Gulabi to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Gulabi</h2><p>Embroidered lehenga</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="lehengas" data-name="Autumn Heirloom"><div class="product-image"><img src="https://images.pexels.com/photos/13156196/pexels-photo-13156196.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A woman in a traditional lehenga among autumn leaves" loading="lazy"><span class="product-tag">Hand finished</span><button class="wishlist-button" type="button" aria-label="Add Autumn Heirloom to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Autumn Heirloom</h2><p>Celebration lehenga</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="lehengas" data-name="The Wedding Edit"><div class="product-image"><img src="https://images.pexels.com/photos/15179842/pexels-photo-15179842/free-photo-of-a-beautiful-bride-in-her-wedding-dress.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A bride in traditional wedding attire" loading="lazy"><span class="product-tag">Bridal edit</span><button class="wishlist-button" type="button" aria-label="Add The Wedding Edit to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>The Wedding Edit</h2><p>Bridal ensemble</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="suits" data-name="Marigold"><div class="product-image"><img src="https://images.pexels.com/photos/11726516/pexels-photo-11726516.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A woman in a vibrant orange traditional outfit" loading="lazy"><span class="product-tag">Just arrived</span><button class="wishlist-button" type="button" aria-label="Add Marigold to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Marigold</h2><p>Embroidered suit</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="sarees" data-name="Red Petals"><div class="product-image"><img src="https://images.pexels.com/photos/13204678/pexels-photo-13204678.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A model in red Indian occasionwear" loading="lazy"><span class="product-tag">Bestseller</span><button class="wishlist-button" type="button" aria-label="Add Red Petals to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Red Petals</h2><p>Festive saree</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="lehengas" data-name="The Bridal Portrait"><div class="product-image"><img src="https://images.pexels.com/photos/20161456/pexels-photo-20161456/free-photo-of-portrait-of-woman-in-red-dress.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A portrait of a woman in a red traditional dress" loading="lazy"><span class="product-tag">Bridal edit</span><button class="wishlist-button" type="button" aria-label="Add The Bridal Portrait to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>The Bridal Portrait</h2><p>Occasion lehenga</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="kurtas" data-name="Garden in Bloom"><div class="product-image"><img src="https://images.pexels.com/photos/13661845/pexels-photo-13661845.jpeg?auto=compress&amp;w=850" alt="A bride in richly detailed traditional attire" loading="lazy"><span class="product-tag">Craft pick</span><button class="wishlist-button" type="button" aria-label="Add Garden in Bloom to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Garden in Bloom</h2><p>Embroidered kurta set</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="sarees" data-name="Color in Tradition"><div class="product-image"><img src="https://images.pexels.com/photos/20957555/pexels-photo-20957555/free-photo-of-elegant-woman-in-colorful-traditional-saree-posing-gracefully-outdoors.jpeg?auto=compress&amp;w=850" alt="A woman in a colorful traditional saree outdoors" loading="lazy"><span class="product-tag">Bestseller</span><button class="wishlist-button" type="button" aria-label="Add Color in Tradition to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Color in Tradition</h2><p>Printed saree</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="suits" data-name="Blue Skies"><div class="product-image"><img src="https://images.pexels.com/photos/25489120/pexels-photo-25489120/free-photo-of-model-in-a-patterned-blouse-blue-skirt-and-scarf.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A model in a patterned blue skirt and scarf" loading="lazy"><span class="product-tag">New season</span><button class="wishlist-button" type="button" aria-label="Add Blue Skies to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Blue Skies</h2><p>Patterned suit</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="sarees" data-name="Windowlight"><div class="product-image"><img src="https://images.pexels.com/photos/36194199/pexels-photo-36194199/free-photo-of-woman-in-saree-looking-out-window-in-goa.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A woman in a saree beside a sunlit window" loading="lazy"><span class="product-tag">Bestseller</span><button class="wishlist-button" type="button" aria-label="Add Windowlight to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Windowlight</h2><p>Everyday saree</p></div><span class="price">Enquire for price</span></div></article>
+        <article class="product" data-category="lehengas" data-name="Rosewater"><div class="product-image"><img src="https://images.pexels.com/photos/33343614/pexels-photo-33343614/free-photo-of-elegant-bride-in-pink-lehenga-outdoors.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A bride in a pink lehenga outdoors" loading="lazy"><span class="product-tag">Occasion edit</span><button class="wishlist-button" type="button" aria-label="Add Rosewater to favourites" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z"/></svg></button></div><div class="product-info"><div><h2>Rosewater</h2><p>Embroidered lehenga</p></div><span class="price">Enquire for price</span></div></article>
+      </div>
+      <p class="empty-collection" id="empty-collection">No pieces in this category yet.</p>
+    </section>
     <section class="hero" aria-label="Featured collections" id="new-arrivals">
       <article class="hero-slide active" aria-hidden="false">
-        <img src="https://images.pexels.com/photos/13661845/pexels-photo-13661845.jpeg?auto=compress&amp;w=2200" alt="A bride in a red and gold embroidered lehenga" fetchpriority="high">
-        <div class="hero-content"><span class="eyebrow">The bridal edit · 2026</span><h1 class="hero-title">Made for<br>the moment.</h1><p class="hero-copy">Timeless elegance, woven with care for every celebration that becomes a memory.</p><a class="hero-cta" href="#collections"><span>EXPLORE COLLECTION</span><span aria-hidden="true">→</span></a></div>
+        <img src="https://images.pexels.com/photos/37628619/pexels-photo-37628619/free-photo-of-elegant-woman-in-traditional-indian-lehenga-by-poolside.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=1100" alt="A woman showing a full red and white lehenga by a poolside" fetchpriority="high">
+        <div class="hero-content"><span class="eyebrow">Sri Lakshmi Vastrakala · New Season</span><h1 class="hero-title">Rang<br>Utsav</h1><p class="hero-copy">New arrivals for the gatherings, rituals and celebrations that stay with you.</p><a class="hero-cta" href="#collections"><span>SHOP NEW ARRIVALS</span><span aria-hidden="true">→</span></a></div>
       </article>
       <article class="hero-slide" aria-hidden="true">
-        <img src="https://images.pexels.com/photos/32857634/pexels-photo-32857634/free-photo-of-elegant-woman-in-traditional-indian-attire-outdoors.jpeg?auto=compress&amp;w=2200" alt="A woman in traditional Indian attire outdoors" loading="lazy">
+        <img src="https://images.pexels.com/photos/36194199/pexels-photo-36194199/free-photo-of-woman-in-saree-looking-out-window-in-goa.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=1100" alt="A woman in a saree beside a sunlit window" loading="lazy">
         <div class="hero-content"><span class="eyebrow">The heirloom collection</span><h2 class="hero-title">A story<br>in silk.</h2><p class="hero-copy">For the rituals, reunions and generations stitched into every heirloom.</p><a class="hero-cta" href="#sarees"><span>DISCOVER SILKS</span><span aria-hidden="true">→</span></a></div>
       </article>
       <article class="hero-slide" aria-hidden="true">
-        <img src="https://images.pexels.com/photos/15221867/pexels-photo-15221867/free-photo-of-woman-in-traditional-red-dress.jpeg?auto=compress&amp;w=2200" alt="A bride in a red lehenga with intricate embroidery" loading="lazy">
+        <img src="https://images.pexels.com/photos/33343614/pexels-photo-33343614/free-photo-of-elegant-bride-in-pink-lehenga-outdoors.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=1100" alt="A bride in a pink lehenga outdoors" loading="lazy">
         <div class="hero-content"><span class="eyebrow">For your forever day</span><h2 class="hero-title">The art of<br>arriving.</h2><p class="hero-copy">A considered edit of bridal pieces, made to feel like only yours.</p><a class="hero-cta" href="#lehengas"><span>EXPLORE BRIDAL</span><span aria-hidden="true">→</span></a></div>
       </article>
       <nav class="quick-edits" aria-label="Shop by collection">
@@ -362,7 +528,7 @@
       <div class="category-grid">
         <a class="category-tile reveal" href="#sarees" id="sarees"><img src="https://images.pexels.com/photos/20957555/pexels-photo-20957555/free-photo-of-elegant-woman-in-colorful-traditional-saree-posing-gracefully-outdoors.jpeg?auto=compress&amp;w=1100" alt="A woman in a colorful traditional saree outdoors" loading="lazy"><div class="category-copy"><span>Woven with heritage</span><h3>Sarees</h3><span class="text-link">DISCOVER <span aria-hidden="true">→</span></span></div></a>
         <a class="category-tile reveal" href="#lehengas" id="lehengas"><img src="https://images.pexels.com/photos/37628619/pexels-photo-37628619/free-photo-of-elegant-woman-in-traditional-indian-lehenga-by-poolside.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=850" alt="A red and white lehenga by a poolside" loading="lazy"><div class="category-copy"><span>Made to move</span><h3>Lehengas</h3><span class="text-link">DISCOVER <span aria-hidden="true">→</span></span></div></a>
-        <a class="category-tile reveal" href="#dresses" id="dresses"><img src="https://images.pexels.com/photos/28405815/pexels-photo-28405815/free-photo-of-traditional-indian-attire-portrait-in-rustic-setting.jpeg?auto=compress&amp;w=1100" alt="Traditional Indian attire in a rustic setting" loading="lazy"><div class="category-copy"><span>For every gathering</span><h3>Dresses</h3><span class="text-link">DISCOVER <span aria-hidden="true">→</span></span></div></a>
+        <a class="category-tile reveal" href="#dresses" id="dresses"><img src="https://images.pexels.com/photos/5595710/pexels-photo-5595710.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=1100" alt="A woman in a softly lit traditional Indian dress" loading="lazy"><div class="category-copy"><span>For every gathering</span><h3>Dresses</h3><span class="text-link">DISCOVER <span aria-hidden="true">→</span></span></div></a>
         <a class="category-tile reveal" href="#bridal"><img src="https://images.pexels.com/photos/33343591/pexels-photo-33343591/free-photo-of-elegant-indian-bride-in-pink-lehenga.jpeg?auto=compress&amp;w=850" alt="A bride in a vibrant pink lehenga" loading="lazy"><div class="category-copy"><span>Your day, your story</span><h3>Bridal</h3><span class="text-link">DISCOVER <span aria-hidden="true">→</span></span></div></a>
       </div>
     </section>
@@ -409,22 +575,22 @@
     </section>
     <section class="section story" id="story">
       <div class="story-image reveal"><img src="https://images.pexels.com/photos/13204678/pexels-photo-13204678.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=1100" alt="A model in red Indian bridal wear" loading="lazy"></div>
-      <div class="story-copy reveal"><span class="eyebrow">A little about us</span><h2>Made with meaning.<br>Worn with joy.</h2><p>At Sri Laxmi Vastrakala, we believe what you wear can hold a little of who you are. Our collection brings together the beauty of Indian craft and a modern sense of occasion, with pieces to return to, remember and make your own.</p><a class="text-link" href="#footer">OUR STORY <span aria-hidden="true">→</span></a></div>
+      <div class="story-copy reveal"><span class="eyebrow">A little about us</span><h2>Made with meaning.<br>Worn with joy.</h2><p>At Sri Lakshmi Vastrakala, we believe what you wear can hold a little of who you are. Our collection brings together the beauty of Indian craft and a modern sense of occasion, with pieces to return to, remember and make your own.</p><a class="text-link" href="#footer">OUR STORY <span aria-hidden="true">→</span></a></div>
     </section>
     <section class="campaign">
       <img src="https://images.pexels.com/photos/10156154/pexels-photo-10156154.jpeg?auto=compress&amp;w=2200" alt="A woman in a red saree in a vibrant garden" loading="lazy">
-      <div class="campaign-content reveal"><span class="eyebrow">Sri Laxmi Vastrakala</span><h2>Timeless. Traditional. Yours.</h2><p>Discover the Sri Laxmi Vastrakala collection.</p><a class="button-outline" href="#collections">EXPLORE THE COLLECTION <span aria-hidden="true">→</span></a></div>
+      <div class="campaign-content reveal"><span class="eyebrow">Sri Lakshmi Vastrakala</span><h2>Timeless. Traditional. Yours.</h2><p>Discover the Sri Lakshmi Vastrakala collection.</p><a class="button-outline" href="#collections">EXPLORE THE COLLECTION <span aria-hidden="true">→</span></a></div>
     </section>
   </main>
   <footer class="footer" id="footer">
     <div class="footer-main">
-      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Sri Laxmi Vastrakala<small>Crafted for celebration</small></span></a><p>Indian occasionwear, thoughtfully chosen for all the moments that become yours.</p></div>
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><path d="M50 76C43 69 34 66 26 67 16 68 10 61 11 52c1-8 6-12 14-10 9 2 17 10 22 21-3-12-1-28 3-37 4 9 6 25 3 37 5-11 13-19 22-21 8-2 13 2 14 10 1 9-5 16-15 15-8-1-17 2-24 9Z"/><path d="M50 26c-9 6-13 15-11 25 1 8 6 15 11 19 5-4 10-11 11-19 2-10-2-19-11-25Z"/><path d="M39 63c-10-8-19-10-27-8 2 11 11 19 22 21 7 1 13-1 16-4M61 63c10-8 19-10 27-8-2 11-11 19-22 21-7 1-13-1-16-4M50 70v21"/></svg></span><span class="brand-name">Sri Lakshmi Vastrakala<small>Crafted for celebration</small></span></a><p>Indian occasionwear, thoughtfully chosen for all the moments that become yours.</p></div>
       <div class="footer-column"><h3>Explore</h3><a href="#new-arrivals">New Arrivals</a><a href="#sarees">Sarees</a><a href="#lehengas">Lehengas</a><a href="#dresses">Dresses</a></div>
-      <div class="footer-column"><h3>Collections</h3><a href="#collections">The Festive Edit</a><a href="#bridal">Wedding</a><a href="#featured">Signature Pieces</a><a href="#the-film">The Film</a><a href="#story">Our Story</a></div>
+      <div class="footer-column"><h3>Collections</h3><a href="#collections">The Festive Edit</a><a href="#bridal">Wedding</a><a href="#featured">Signature Pieces</a><a href="#story">Our Story</a></div>
       <div class="footer-column"><h3>We're here</h3><a href="mailto:hello@srilaxmivastrakala.com">Get in touch</a><a href="#footer">Shipping & returns</a><a href="#footer">Care guide</a></div>
       <div class="footer-column footer-newsletter"><h3>A note from us</h3><p>For new collections, thoughtful stories and first looks.</p><form action="mailto:hello@srilaxmivastrakala.com" method="get" enctype="text/plain"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" name="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe by email">→</button></form></div>
     </div>
-    <div class="footer-bottom"><span>© 2026 Sri Laxmi Vastrakala. All rights reserved.</span><div class="socials" aria-label="Social links"><a href="https://www.instagram.com/" aria-label="Instagram">ig</a><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://www.pinterest.com/" aria-label="Pinterest">p</a></div><span>Made for the moments that matter.</span></div>
+    <div class="footer-bottom"><span>© 2026 Sri Lakshmi Vastrakala. All rights reserved.</span><div class="socials" aria-label="Social links"><a href="https://www.instagram.com/" aria-label="Instagram">ig</a><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://www.pinterest.com/" aria-label="Pinterest">p</a></div><span>Made for the moments that matter.</span></div>
   </footer>
   <div class="search-panel" id="search-panel" hidden style="position:fixed;z-index:30;inset:0;background:rgba(32,28,23,.58);padding:16vh 22px 22px;">
     <div style="position:relative;max-width:680px;margin:auto;padding:42px clamp(22px,6vw,64px);background:#fffefa;box-shadow:0 20px 80px #17140f33;">
@@ -506,14 +672,46 @@
       searchInput.addEventListener('input', () => {
         const query = searchInput.value.trim().toLowerCase();
         if (!query) { searchStatus.textContent = ''; return; }
-        const matches = [...document.querySelectorAll('.category-tile, .product')].filter((item) => item.textContent.toLowerCase().includes(query));
+        const matches = [...document.querySelectorAll('.category-tile, #featured .product, #collection-grid .product')].filter((item) => item.getClientRects().length && item.textContent.toLowerCase().includes(query));
         searchStatus.textContent = matches.length ? `${matches.length} matching ${matches.length === 1 ? 'edit' : 'edits'} on this page` : 'No matching edits on this page';
         matches[0]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+      document.querySelector('#mobile-search-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        searchPanel.hidden = false;
+        searchInput.value = document.querySelector('#mobile-search-input').value;
+        searchInput.dispatchEvent(new Event('input'));
+        searchInput.focus();
       });
       document.querySelectorAll('.wishlist-button').forEach((button) => button.addEventListener('click', () => {
         const saved = button.getAttribute('aria-pressed') !== 'true';
         button.setAttribute('aria-pressed', String(saved));
         button.setAttribute('aria-label', `${saved ? 'Remove' : 'Add'} ${button.getAttribute('aria-label').replace(/^(Add|Remove) /, '')}`);
+      }));
+
+      const collectionGrid = document.querySelector('#collection-grid');
+      const products = [...collectionGrid.querySelectorAll('.product')];
+      const categoryFilter = document.querySelector('#category-filter');
+      const collectionSort = document.querySelector('#collection-sort');
+      const collectionCount = document.querySelector('#collection-count');
+      const emptyCollection = document.querySelector('#empty-collection');
+      const updateCollection = () => {
+        const category = categoryFilter.value;
+        const visible = products.filter((product) => category === 'all' || product.dataset.category === category);
+        products.forEach((product) => { product.hidden = category !== 'all' && product.dataset.category !== category; });
+        visible.sort((first, second) => {
+          const direction = collectionSort.value === 'name-desc' ? -1 : 1;
+          if (collectionSort.value === 'featured') return products.indexOf(first) - products.indexOf(second);
+          return first.dataset.name.localeCompare(second.dataset.name) * direction;
+        }).forEach((product) => collectionGrid.append(product));
+        collectionCount.textContent = `${visible.length} ${visible.length === 1 ? 'piece' : 'pieces'}`;
+        emptyCollection.classList.toggle('visible', visible.length === 0);
+      };
+      categoryFilter.addEventListener('change', updateCollection);
+      collectionSort.addEventListener('change', updateCollection);
+      document.querySelectorAll('[data-category-link]').forEach((link) => link.addEventListener('click', () => {
+        categoryFilter.value = link.dataset.categoryLink;
+        updateCollection();
       }));
 
       const observer = new IntersectionObserver((entries) => {
